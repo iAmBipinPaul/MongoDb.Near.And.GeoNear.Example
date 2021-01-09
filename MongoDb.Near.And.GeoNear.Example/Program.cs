@@ -19,7 +19,6 @@ namespace MongoDb.Near.And.GeoNear.Example
 
         static async Task Main(string[] args)
         {
-            
             Console.WriteLine("Creating Index if not exit");
             var builder = Builders<ZipCodeCollection>.IndexKeys;
             var keys = builder.Geo2DSphere(tag => tag.Location);
@@ -55,8 +54,11 @@ namespace MongoDb.Near.And.GeoNear.Example
             var result = await Collection.CountDocumentsAsync(new BsonDocument());
             if (result == 0)
             {
+                var baseDirectory = AppDomain.CurrentDomain.BaseDirectory +
+                                    string.Format("..{0}..{0}..{0}", Path.DirectorySeparatorChar);
                 var usZipCodeJsonData = await File.ReadAllTextAsync(
-                    @"C:\Users\iambi\RiderProjects\MongoDBNearBy\MongoDb.Near.And.GeoNear.Example\USZipCode.json");
+                    $@"{baseDirectory}USZipCode.json");
+                
                 var zipCodeValue = JsonConvert.DeserializeObject<List<PlainZipCode>>(usZipCodeJsonData);
 
                 var zipCodeCollectionList = new List<ZipCodeCollection>();
