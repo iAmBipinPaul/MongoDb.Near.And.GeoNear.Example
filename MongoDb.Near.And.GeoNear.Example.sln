@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDb.Near.And.GeoNear.Example", "MongoDb.Near.And.GeoNear.Example\MongoDb.Near.And.GeoNear.Example.csproj", "{5DD57A52-C38A-4D91-BD1E-1853C971315C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DD57A52-C38A-4D91-BD1E-1853C971315C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD57A52-C38A-4D91-BD1E-1853C971315C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD57A52-C38A-4D91-BD1E-1853C971315C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD57A52-C38A-4D91-BD1E-1853C971315C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
